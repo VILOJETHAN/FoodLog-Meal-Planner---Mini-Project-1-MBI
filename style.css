@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+Header,
+#feature,
+#story,
+.reviews,
+footer {
+    width: 100vw;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: scrollFade 1s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 50%;
+}
+
+@keyframes scrollFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform .25s ease-in-out;
+    box-shadow: #4444441a 0px 5px 5px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+
+}
+
+
+
+/* Hero */
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F8F8F8;
+    padding: 10px;
+    height: 90vh;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero-content a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.hero img {
+    position: relative;
+    top: 20px;
+    width: 100vh;
+    height: 100vh;
+    z-index: 1;
+}
+
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    /* z-index: 2; */
+    /* padding-left: 30px;
+    padding-right: 50px; */
+    margin-left: 200px;
+    margin-right: 50px;
+
+}
+
+
+.hero-content h1,
+.highlight {
+    font-size: 86px;
+    font-weight: bold;
+
+}
+
+.highlight {
+    color: #002fff;
+}
+
+/* Features */
+
+.title {
+    display: flex;
+    padding: 40px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.card {
+    box-shadow: #4444441a 0px 5px 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform .25s ease-in-out;
+    box-shadow: #4444441a 0px 5px 5px;
+}
+
+/* Success Stories Section */
+
+.success-stories {
+    padding: 30px;
+}
+
+.success-stories h2 {
+    font-size: 40px;
+}
+
+.success-stories .carousel-item {
+    transition: transform 0.8s ease-in-out;
+}
+
+.before-after img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+blockquote {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+#storyCarousel button:hover {
+    box-shadow: #ffffff00 0px 5px 5px;
+}
+
+/* Peoples Opinion */
+
+.reviews {
+    padding: 30px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    height: 50vh;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(2, 38, 85);
+}
+
+.foot-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+#contacts {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+
+/* Media Queries */
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 375px) {
+
+    .title {
+        display: flex;
+        padding: 40px;
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+
+    Header,
+    #feature,
+    #story,
+    .reviews,
+    footer {
+        width: 100vw;
+        opacity: 0;
+        transform: translateY(100px);
+        animation: scrollFade 1s ease-out both;
+        animation-timeline: view();
+        animation-range: entry 30% cover 50%;
+    }
+
+    @keyframes scrollFade {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+
+    /* Hero */
+
+    .hero img {
+        position: static;
+        top: 100px;
+        width: 50vh;
+        height: 50vh;
+        margin-top: 10px;
+    }
+
+    .hero-content {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .hero-content h1 {
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .hero-content h1,
+    .highlight {
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .highlight {
+        color: #002fff;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    /* features */
+
+    .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* peoples opinion */
+    .peoples-opinion {
+        flex-direction: column;
+    }
+
+    .bottom-review {
+        flex-direction: column;
+    }
+
+    /* footer */
+
+    footer{
+        height: auto;
+    }
+
+    .info {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    #contacts {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .foot-content {
+        flex-direction: column;
+    }
+
+}
