@@ -32,6 +32,12 @@ button:hover {
     box-shadow: #4444441a 0px 5px 5px;
 }
 
+/* Nav-header */
+
+header{
+    position: fixed;
+    z-index: 5;
+}
 
 nav ul {
     display: flex;
@@ -66,10 +72,10 @@ nav ul {
 
 .hero img {
     position: relative;
-    top: 20px;
+    top: 50px;
     width: 100vh;
     height: 100vh;
-    z-index: 1;
+    z-index: 10;
 }
 
 
@@ -239,6 +245,7 @@ footer {
         width: 50vh;
         height: 50vh;
         margin-top: 10px;
+        z-index: 3;
     }
 
     .hero-content {
