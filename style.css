@@ -122,8 +122,8 @@ nav ul {
     gap: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 50px;
+    /* padding-left: 30px;
+    padding-right: 50px; */
 }
 
 .cards {
@@ -242,8 +242,8 @@ footer {
     .hero img {
         position: static;
         top: 100px;
-        width: 50vh;
-        height: 50vh;
+        width: 100%;
+        height: 100%;
         margin-top: 10px;
         z-index: 3;
     }

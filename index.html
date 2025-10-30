@@ -43,7 +43,7 @@
         </nav>
     </header> -->
 
-    <header >
+    <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
             <div class="container-fluid bg-light">
                 <a class="navbar-brand fw-bold fs-3 text-primary  mx-2" href="#">FoodLog</a>
@@ -64,15 +64,16 @@
                             <a class="nav-link mx-2" href="#contacts">About Us / Contact Us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle mx-2" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Select Language
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">TAM</a></li>
-                                <li><a class="dropdown-item" href="#">ENG</a></li>
-                                <li><a class="dropdown-item" href="#">Default</a></li>
-                            </ul>
+                            <div id="google_translate_element"></div>
+
+                            <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                                }
+                            </script>
+
+                            <script type="text/javascript"
+                                src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                         </li>
                     </ul>
                 </div>
@@ -231,7 +232,7 @@
 
     <section class="reviews">
         <h3 class="title">Peoples Opinion:</h3>
-        <div class="peoples-opinion px-5 d-flex justify-content-evenly">
+        <div class="peoples-opinion d-flex justify-content-evenly">
             <div class="card text-bg-light mb-3" style="max-width: 18rem;">
                 <div class="card-header">Mark Zuckerberg</div>
                 <div class="card-body">
