@@ -219,7 +219,7 @@ footer {
     #feature,
     #story,
     .reviews,
-    footer {
+    footer, .card {
         width: 100vw;
         opacity: 0;
         transform: translateY(100px);
@@ -249,6 +249,7 @@ footer {
     }
 
     .hero-content {
+        margin-top: 70px;
         margin-left: 0px;
         margin-right: 0px;
     }
