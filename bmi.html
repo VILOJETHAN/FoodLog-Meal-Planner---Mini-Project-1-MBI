@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>FoodLog</title>
 </head>
 
 <body>
-
-    <header>
+    <header style="top:0px;">
         <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
             <div class="container-fluid bg-light">
-                <a class="navbar-brand fw-bold fs-3 text-primary  mx-2" href="index.html">FoodLog</a>
+                <a class="navbar-brand fw-bold fs-3 text-primary  mx-2" href="#">FoodLog</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -52,24 +52,13 @@
 
 
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Plan your <span class="highlight">meals.</span> Balance your life.</h1>
-            <p>Whether you’re gaining, losing, or maintaining — FoodLog keeps you accountable with simple tracking and
-                smart insights.</p>
-            <button type="button" class="btn btn-primary btn-lg text-b"><a href="#feature">Get started</a></button>
-        </div>
-        <img src="Assets/hero-img.png" alt="hero-img">
-
-    </section>
 
     <!-- Features -->
     <section id="feature">
         <h3 class="title">Features that you can make use of with FoodLog:</h3>
 
         <div class="cards">
-            <div class="card" style="width: 20rem; border: none;">
+            <div class="card" style="width: 25rem; border: solid; border-color: rgba(0, 0, 0, 0.459);">
                 <img src="Assets/BMI.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">BMI Calculator</h5>
@@ -110,91 +99,6 @@
             </div>
         </div>
 
-    </section>
-
-
-    <!-- Success Stories Section -->
-    <section id="story" class="success-stories py-5 bg-light">
-        <h3 class="title">Be one of the success stories:</h3>
-
-        <div class="container text-center">
-
-
-
-            <div id="storyCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-
-                    <!-- Story 1 -->
-                    <div class="carousel-item active">
-                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
-                            <div class="before-after d-flex">
-                                <img src="Assets/comparison1.png" class="img-fluid rounded-start" alt="Before"
-                                    style="width: 500px;">
-                            </div>
-                            <div class="text-start" style="max-width: 400px;">
-                                <h5 class="fw-bold mt-3 mt-md-0">Arjun, 26</h5>
-                                <p class="text-primary">Lost 8kg in 3 months</p>
-                                <blockquote class="fst-italic">
-                                    “FoodLog made tracking meals simple and fun! I never thought I could stay this
-                                    consistent.”
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Story 2 -->
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
-                            <div class="before-after d-flex">
-                                <img src="Assets/Comparison2.png" class="img-fluid rounded-start" alt="Before"
-                                    style="width: 500px;">
-                            </div>
-                            <div class="text-start" style="max-width: 400px;">
-                                <h5 class="fw-bold mt-3 mt-md-0">Ragav, 28</h5>
-                                <p class="text-primary">Gained healthy weight in 2 months</p>
-                                <blockquote class="fst-italic">
-                                    “The meal planner helped me eat better every day. I feel more energetic than ever!”
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Story 3 -->
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
-                            <div class="before-after d-flex">
-                                <img src="Assets/Comparison3.png" class="img-fluid rounded-start" alt="Before"
-                                    style="width: 500px;">
-                            </div>
-                            <div class="text-start" style="max-width: 400px;">
-                                <h5 class="fw-bold mt-3 mt-md-0">Rahul, 30</h5>
-                                <p class="text-primary">Maintained fitness for 1 year</p>
-                                <blockquote class="fst-italic">
-                                    “Thanks to FoodLog, meal planning is no longer stressful — it’s part of my routine
-                                    now.”
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <p class="text-muted mb-5">
-                    Real people. Real progress. FoodLog helps users stay consistent and reach their health goals.
-                </p>
-
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev " type="button" data-bs-target="#storyCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-secondary rounded"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#storyCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-secondary rounded"></span>
-                </button>
-
-            </div>
-        </div>
     </section>
 
     <!-- Peoples Opinion -->
@@ -309,6 +213,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
