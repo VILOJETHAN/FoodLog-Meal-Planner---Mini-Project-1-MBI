@@ -277,11 +277,11 @@ function initMealPlanner() {
       goal === "gain"
         ? "With a ~500 kcal surplus, expect ~0.4–0.6 kg per week."
         : goal === "lose"
-        ? "With a ~500 kcal deficit, expect ~0.4–0.6 kg per week."
-        : "Maintaining calories keeps your weight stable.";
+          ? "With a ~500 kcal deficit, expect ~0.4–0.6 kg per week."
+          : "Maintaining calories keeps your weight stable.";
 
     weeklyPlan.innerHTML = "";
-    const days = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+    const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
     const breakfast = RECIPES.filter(r => r.calories <= 300);
     const meals = RECIPES;
 

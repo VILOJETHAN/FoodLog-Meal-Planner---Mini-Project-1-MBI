@@ -13,7 +13,37 @@
     <header style="top:0px;">
         <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
             <div class="container-fluid bg-light">
-                <a class="navbar-brand fw-bold fs-3 text-primary mx-2" href="index.html">FoodLog</a>
+                <a class="navbar-brand fw-bold fs-3 text-primary  mx-2" href="index.html">FoodLog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <div id="google_translate_element">
+                                <div class="skiptranslate goog-te-gadget" dir="ltr" >
+                                    <div id=":0.targetLanguage"></div>
+                                    <span style="white-space:nowrap">
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                                }
+                            </script>
+                            <script type="text/javascript"
+                                src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -24,7 +54,7 @@
             <h3 class="title">Features that you can make use of with FoodLog:</h3>
             <div class="back">
                 <button onclick="backButton()">👈</button>
-                <h5>BMI Calculator:</h5>
+                <h5>Meal Planner:</h5>
             </div>
 
 
@@ -64,6 +94,7 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="recipes.js"></script>
     <script src="script.js"></script>
 </body>
 
