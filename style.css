@@ -5,37 +5,49 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* BMI Calculator */
+#bmi-calculator .card {
+    transition: 0.3s ease;
+}
+
+#bmi-calculator .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
 /* Google Translate custom styling */
 #google_translate_element {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
 }
 
 .goog-te-gadget {
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 0.01rem !important;
-  color: #333 !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 0.01rem !important;
+    color: #333 !important;
 }
 
 .goog-te-gadget select {
-  background-color: #f8f9fa !important;
-  border: 1px solid #ddd !important;
-  border-radius: 5px !important;
-  margin-top: 20px !important;
-  padding: 10px 8px !important;
-  font-size: 0.9rem !important;
-  color: #333 !important;
-  outline: none !important;
-  cursor: pointer;
+    background-color: #f8f9fa !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    margin-top: 10px 10px 10px 10px !important;
+    padding: 10px 8px !important;
+    font-size: 0.9rem !important;
+    color: #333 !important;
+    outline: none !important;
+    cursor: pointer;
 }
+
 
 /* Shrink the "Powered by Google" text, but still visible */
 .goog-logo-link,
 .goog-te-gadget span {
-  font-size: 0.7rem !important;
-  opacity: 0 !important;
+    font-size: 0.7rem !important;
+    opacity: 0 !important;
 }
 
 
@@ -68,7 +80,7 @@ button:hover {
 
 /* Nav-header */
 
-header{
+header {
     position: fixed;
     z-index: 5;
 }
@@ -83,7 +95,10 @@ nav ul {
     gap: 20px;
 }
 
-
+navbar-nav{
+    padding: 0;
+    margin: 0;
+}
 
 /* Hero */
 
@@ -235,6 +250,22 @@ footer {
     gap: 90px;
 }
 
+/* recipie page */
+.back{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.back button{
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #F8F8F8;
+}
+
 
 /* Media Queries */
 
@@ -254,7 +285,8 @@ footer {
     #feature,
     #story,
     .reviews,
-    footer, .card {
+    footer,
+    .card {
         width: 100vw;
         opacity: 0;
         transform: translateY(100px);
@@ -330,7 +362,7 @@ footer {
 
     /* footer */
 
-    footer{
+    footer {
         height: auto;
     }
 

@@ -56,50 +56,40 @@
     <!-- Features -->
     <section id="feature">
         <h3 class="title">Features that you can make use of with FoodLog:</h3>
-
-        <div class="cards">
-            <div class="card" style="width: 22rem; border: solid; border-color: rgba(0, 0, 0, 0.459);">
-                <img src="Assets/BMI.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">BMI Calculator</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="bmi.html" class="btn btn-primary">Let's Start</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 20rem; border: none;">
-                <img src="Assets/recipies.jpg" class="card-img-top" alt="recipies">
-                <div class="card-body">
-                    <h5 class="card-title">Recipies</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="recipe.html" class="btn btn-primary">Let's Start</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 20rem; border: none;">
-                <img src="Assets/calorie-teacker.jpg" class="card-img-top" alt="meal-remainer">
-                <div class="card-body">
-                    <h5 class="card-title">Calorie-teacker</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="calorie.html" class="btn btn-primary">Let's Start</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 20rem; border: none;">
-                <img src="Assets/meal-planner.jpg" class="card-img-top" alt="meal-planner">
-                <div class="card-body">
-                    <h5 class="card-title">Meal-planner</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="mealPlanner.html" class="btn btn-primary">Let's Start</a>
-                </div>
-            </div>
+        <div class="back">
+            <button onclick="backButton()">👈</button>
+            <h5>BMI Calculator:</h5>
         </div>
 
+
     </section>
+
+    <!-- BMI Calculator Section -->
+    <section id="bmi-calculator" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold text-primary mb-4">BMI Calculator</h2>
+            <p class="text-muted mb-4">Enter your details below to calculate your Body Mass Index</p>
+
+            <div class="card mx-auto shadow-sm p-4" style="max-width: 400px; border-radius: 15px;">
+                <form id="bmiForm">
+                    <div class="mb-3">
+                        <label for="height" class="form-label">Height (in cm)</label>
+                        <input type="number" class="form-control" id="height" placeholder="Enter your height" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="weight" class="form-label">Weight (in kg)</label>
+                        <input type="number" class="form-control" id="weight" placeholder="Enter your weight" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Calculate BMI</button>
+                </form>
+
+                <div id="bmiResult" class="mt-4 fw-semibold"></div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Peoples Opinion -->
 
